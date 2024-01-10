@@ -97,7 +97,7 @@ How to Install MySQL server and MySQL Workbench
 
 ## Usage
 <h1
-  style="align-text: center;">
+  align="center">
   <img 
     src="images/MainMenu.png" 
     alt="Application Main Menu" 
@@ -105,7 +105,7 @@ How to Install MySQL server and MySQL Workbench
       Application Main Menu.
 </h1>
 <h1
-  style="align-text: center;">
+  align="center">
   <img 
     src="images/EmployersList.png" 
     alt="Employers List" 
@@ -113,7 +113,7 @@ How to Install MySQL server and MySQL Workbench
       Employers List.
 </h1>
 <h1
-  style="align-text: center;">
+  align="center">
   <img 
     src="images/AssignedTaskList.png" 
     alt="Assigned Task List Sample" 
@@ -121,7 +121,7 @@ How to Install MySQL server and MySQL Workbench
       Assigned Task List Sample.
 </h1>
 <h1
-  style="align-text: center;">
+  align="center">
   <img 
     src="images/EmployersForm.png" 
     alt="Employers Form sample" 
@@ -129,7 +129,7 @@ How to Install MySQL server and MySQL Workbench
       Employers Form sample.
 </h1>
 <h1
-  style="align-text: center;">
+  align="center">
   <img 
     src="images/TasksList.png" 
     alt="Tasks List" 
@@ -137,7 +137,7 @@ How to Install MySQL server and MySQL Workbench
       Tasks List.
 </h1>
 <h1
-  style="align-text: center;">
+  align="center">
   <img 
     src="images/TaskForm.png" 
     alt="Task Form Sample" 
@@ -145,7 +145,7 @@ How to Install MySQL server and MySQL Workbench
       Task Form Sample.
 </h1>
 <h1
-  style="align-text: center;">
+  align="center">
   <img 
     src="images/TaskEdit.png" 
     alt="Task Edit Form Sample" 
