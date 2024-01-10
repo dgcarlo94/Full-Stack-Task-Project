@@ -2,7 +2,7 @@
 
 ## Description 
 
-This project is a full-stack system designed for creating new tasks and assigning them to an employer.
+This individual project is a full-stack system designed for creating new tasks and assigning them to an employer.
 Each newly created task is initially in a "CREATED" state and can be allocated to an employee. Upon assignment, tha task's status changes to "IN_PROGRESS".
 While the task is IN_PROGRESS, it can be removed from the employer's task list and his state returns back to "CREATED".
 Once the button "complete" is clicked the task's state become "COMPLETED". A Completed task couldn't be reassigned to other employers, thus permanently remaining in the task list of the employee who completed it.
