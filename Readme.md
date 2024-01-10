@@ -36,9 +36,13 @@ Install Dependencies:
 
 Open a terminal in the project's root directory. In VS Code, you can open a terminal in the editor itself.
 Run the command npm install. This will install all the necessary packages and dependencies defined in the project's package.json file.
-Running the Project
-Start the Development Server:
 
+To correctly visualize the HTML, install Bootstrap by typing npm install bootstrap in the terminal. 
+This command installs the latest version of Bootstrap.
+
+Running the Project
+
+Start the Development Server:
 In the same terminal, run the command ng serve or npm start (depending on how the project is configured). This will start the Angular development server.
 Wait for the compilation to complete.
 Access the Application:
