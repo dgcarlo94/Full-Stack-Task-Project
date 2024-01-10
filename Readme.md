@@ -98,57 +98,57 @@ How to Install MySQL server and MySQL Workbench
 ## Usage
 <h1
   align="center">
+  Application Main Menu.
   <img 
     src="images/MainMenu.png" 
     alt="Application Main Menu" 
-    style="float: left;" />
-      Application Main Menu.
+    style="float: left;" />   
 </h1>
 <h1
   align="center">
+  Employers List.
   <img 
     src="images/EmployersList.png" 
     alt="Employers List" 
-    style="float: left;" />
-      Employers List.
+    style="float: left;" /> 
 </h1>
 <h1
   align="center">
+  Assigned Task List Sample.
   <img 
     src="images/AssignedTaskList.png" 
     alt="Assigned Task List Sample" 
     style="float: left;" />
-      Assigned Task List Sample.
 </h1>
 <h1
   align="center">
+  Employers Form sample.
   <img 
     src="images/EmployersForm.png" 
     alt="Employers Form sample" 
     style="float: left;" />
-      Employers Form sample.
 </h1>
 <h1
   align="center">
+  Tasks List.
   <img 
     src="images/TasksList.png" 
     alt="Tasks List" 
-    style="float: left;" />
-      Tasks List.
+    style="float: left;" />  
 </h1>
 <h1
   align="center">
+  Task Form Sample.
   <img 
     src="images/TaskForm.png" 
     alt="Task Form Sample" 
-    style="float: left;" />
-      Task Form Sample.
+    style="float: left;" />  
 </h1>
 <h1
   align="center">
+  Task Edit Form Sample.
   <img 
     src="images/TaskEdit.png" 
     alt="Task Edit Form Sample" 
-    style="float: left;" />
-      Task Edit Form Sample.
+    style="float: left;" />  
 </h1>
