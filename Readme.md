@@ -96,31 +96,59 @@ How to Install MySQL server and MySQL Workbench
 10. Create a database ensuring that its name matches the <database_name> specified in the application.properties file.
 
 ## Usage
-<p>
-  <img src="images/MainMenu.png" alt="Application Main Menu" style="float: left;" />
-  Application Main Menu.
-</p>
-<p>
-  <img src="images/EmployersList.png" alt="Employers List" style="float: left;" />
-  Employers List.
-</p>
-<p>
-  <img src="images/AssignedTaskList.png" alt="Assigned Task List Sample" style="float: left;" />
-  Assigned Task List Sample.
-</p>
-<p>
-  <img src="images/EmployersForm.png" alt="Employers Form sample" style="float: left;" />
-  Employers Form sample.
-</p>
-<p>
-  <img src="images/TasksList.png" alt="Tasks List" style="float: left;" />
-  Tasks List.
-</p>
-<p>
-  <img src="images/TaskForm.png" alt="Task Form Sample" style="float: left;" />
-  Task Form Sample.
-</p>
-<p>
-  <img src="images/TaskEdit.png" alt="Task Edit Form Sample" style="float: left;" />
-  Task Edit Form Sample.
-</p>
+<h1
+  style="align-text: center;">
+  <img 
+    src="images/MainMenu.png" 
+    alt="Application Main Menu" 
+    style="float: left;" />
+      Application Main Menu.
+</h1>
+<h1
+  style="align-text: center;">
+  <img 
+    src="images/EmployersList.png" 
+    alt="Employers List" 
+    style="float: left;" />
+      Employers List.
+</h1>
+<h1
+  style="align-text: center;">
+  <img 
+    src="images/AssignedTaskList.png" 
+    alt="Assigned Task List Sample" 
+    style="float: left;" />
+      Assigned Task List Sample.
+</h1>
+<h1
+  style="align-text: center;">
+  <img 
+    src="images/EmployersForm.png" 
+    alt="Employers Form sample" 
+    style="float: left;" />
+      Employers Form sample.
+</h1>
+<h1
+  style="align-text: center;">
+  <img 
+    src="images/TasksList.png" 
+    alt="Tasks List" 
+    style="float: left;" />
+      Tasks List.
+</h1>
+<h1
+  style="align-text: center;">
+  <img 
+    src="images/TaskForm.png" 
+    alt="Task Form Sample" 
+    style="float: left;" />
+      Task Form Sample.
+</h1>
+<h1
+  style="align-text: center;">
+  <img 
+    src="images/TaskEdit.png" 
+    alt="Task Edit Form Sample" 
+    style="float: left;" />
+      Task Edit Form Sample.
+</h1>
