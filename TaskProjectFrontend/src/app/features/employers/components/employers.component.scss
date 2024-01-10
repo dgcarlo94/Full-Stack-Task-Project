@@ -1,0 +1,17 @@
+.container{
+    margin-top: 8rem;
+}
+.card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 42, 114);
+    box-shadow: 10px 10px 20px black;
+    height: 16rem;
+    color: white;
+}
+.card:hover
+{
+    background-color: rgb(33, 33, 90)
+}

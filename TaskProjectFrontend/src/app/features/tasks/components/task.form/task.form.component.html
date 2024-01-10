@@ -1,0 +1,111 @@
+<h1 style="text-align: center; margin-top: 2rem;">Add Task</h1>
+
+<div class="d-flex justify-content-center" style="margin-top: 5rem;">
+  <form [formGroup]="this.taskForm" (ngSubmit)="addTask()">
+    <div class="card" style="width: 25rem;">
+
+      <div class="card-body">
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <h5 class="card-title justify-content-center" style="text-align: center;">
+              Add Task
+            </h5>
+          </li>
+          <li class="list-group-item">
+            <label>
+              Title:
+            </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <input 
+                formControlName="title" 
+                [appSetBorderRed]="this.taskForm.get('title')?.invalid" 
+                type="text">
+          </li>
+          <li 
+            class="list-group-item">
+              <label>
+                  {{taskForm.get('title')?.value?.length}} / 100
+              </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <label>
+                  Description:
+              </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <textarea 
+                class="textarea"
+                formControlName="description"
+                [appSetBorderRed]="this.taskForm.get('description')?.invalid">
+              </textarea>
+          </li>
+          <li 
+            class="list-group-item">
+              <label>
+                {{taskForm.get('description')?.value?.length}} / 1000
+              </label>
+          </li>
+
+          <li 
+            class="list-group-item">
+              <label>
+                Start Date:
+              </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <input 
+                formControlName="start_date" 
+                type="date"
+                [appSetBorderRed]="this.taskForm.errors?.['endDateInvalid']">
+          </li>
+          <li 
+            class="list-group-item">
+              <label>
+                  End Date:
+              </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <input 
+                id="end_date"
+                [min]='this.taskForm.get("start_date")?.value ?? ""'
+                formControlName="end_date"
+                [appSetBorderRed]="this.taskForm.errors?.['endDateInvalid']" 
+                type="date">
+          </li>
+          <li 
+            class="list-group-item">
+              <label>
+                  Choose a state:
+              </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <select  
+                formControlName="state" 
+                [appSetBorderRed]="this.taskForm.get('state')?.invalid">
+                  @for (state of states; track $index)
+                  {
+                    @if(state.state === "CREATED")
+                    {
+                      <option [ngValue]="state" disabled>{{this.state.state}}</option>
+                    }
+                  }
+              </select>
+          </li>
+        </ul>
+      </div>
+      <button 
+        class="btn btn-primary" 
+        [disabled]="this.taskForm.invalid">
+          Confirm
+      </button>
+      </div>
+  </form>
+</div>

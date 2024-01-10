@@ -1,0 +1,71 @@
+<div class="card mb-3">
+  <div class="card-header">
+    Title
+  </div>
+  <div class="card-body">
+    <h5 class="card-title" style="text-align: center;">{{task?.title}}</h5>
+    <div class="row">
+      <div class="col-12 card-text">
+        <hr />
+        Description
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 description-div">
+        <h4 style="text-align: center;" class="description">
+          {{ task?.description }}
+        </h4>
+      </div>
+    </div>
+    <div class="row card-start-date">
+      <div class="col-8">
+        <b>
+          Start Date:
+        </b> 
+      </div>
+      <div class="col-4">
+          {{task?.start_date}}
+      </div>
+    </div>
+    <div class="row card-end-date">
+      <div class="col-8">
+        <b>
+          End Date: 
+        </b>
+      </div>
+      <div class="col-4 text-end-date">
+          {{task?.end_date}}
+      </div>
+    </div>
+    <div class="row card-state">
+      <div class="col-8">
+        <b>
+          State: 
+        </b>
+      </div>
+      <div class="col-4">
+          {{task?.state?.state}}
+      </div>
+    </div>
+    <!---->
+    <div class="row">
+      <div class="col-6">
+        <button 
+          class="btn btn-warning"
+          appShadowBox
+          routerLink='/task-app/tasks/tasks/tasks-form/{{task?.id_task}}'>
+            Edit
+        </button>
+      </div>
+      <div class="col-6">
+        <button 
+          class="btn btn-danger" 
+          (click)="removeTask(task?.id_task)"
+          appShadowBox>
+            Remove
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

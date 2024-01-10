@@ -1,0 +1,23 @@
+<div class="container">
+  <h3 style="text-align:center; margin-top: 2rem; margin-bottom: 2rem;">Employers list</h3>
+  <div class="row">
+    @for (employer of employers; track $index)
+    {
+    <div class="col-md-4">
+      <app-employer-card [employer]="employer" (notify)="getEmployers()"
+        (employerRemoved)="getEmployers()"></app-employer-card>
+    </div>
+    }
+    <div 
+      class="col-md-4"
+      (click)="getEmployerForm()">
+      <div 
+        class="card mb-3">
+        <h2>
+            Add Employer
+        </h2>
+      </div>
+    </div>
+  </div>
+
+<router-outlet></router-outlet>

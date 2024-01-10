@@ -1,0 +1,127 @@
+<h1 style="text-align: center; margin-top: 2rem;">Edit Task</h1>
+
+<div class="d-flex justify-content-center" style="margin-top: 5rem;">
+  <form 
+    [formGroup]="this.taskForm"
+    (ngSubmit)="editTask()">
+    <div class="card" style="width: 25rem;">
+
+      <div class="card-body">
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <h5 class="card-title justify-content-center" style="text-align: center;">
+              Edit Task
+            </h5>
+          </li>
+          <li class="list-group-item">
+            <label>
+              Title:
+            </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <input 
+                formControlName="title" 
+                [appSetBorderRed]="this.taskForm.get('title')?.invalid" 
+                type="text"
+                placeholder="{{this.task?.title}}">
+          </li>
+          <li 
+            class="list-group-item">
+              <label>
+                  {{taskForm.get('title')?.value?.length}} / 100
+              </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <label>
+                  Description:
+              </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <textarea 
+                class="textarea"
+                formControlName="description"
+                [appSetBorderRed]="this.taskForm.get('description')?.invalid"
+                value="{{this.task?.description}}">
+              </textarea>
+          </li>
+          <li 
+            class="list-group-item">
+              <label>
+                {{taskForm.get('description')?.value?.length}} / 1000
+              </label>
+          </li>
+
+          <li 
+            class="list-group-item">
+              <label>
+                Start Date:
+              </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <input 
+                formControlName="start_date" 
+                type="date"
+                [appSetBorderRed]="this.taskForm.errors?.['endDateInvalid']"
+                value="{{this.task?.start_date}}">
+          </li>
+          <li 
+            class="list-group-item">
+              <label>
+                  End Date:
+              </label>
+          </li>
+          <li 
+            class="list-group-item">
+              <input 
+                formControlName="end_date"
+                [appSetBorderRed]="this.taskForm.errors?.['endDateInvalid']" 
+                type="date"
+                value="{{this.task?.end_date}}">
+          </li>
+        </ul>
+      </div>
+      <button 
+        class="btn btn-primary" 
+        [disabled]="this.taskForm.invalid">
+          Confirm
+      </button>
+      </div>
+  </form>
+</div>
+<!-- -->
+<div class="d-flex justify-content-center" style="margin-top: 5rem;">
+  <div class="card" style="width: 25rem;">
+<form [formGroup]="this.assignedTaskForm" (ngSubmit)="assignTask()">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <h5 class="card-title justify-content-center" style="text-align: center;">
+        Assign Task
+      </h5>
+    </li>
+    <li class="list-group-item">
+      <label>
+        Assign to an employer:
+      </label>
+    </li>
+    <li class="list-group-item">
+      <select formControlName="employer" [appSetBorderRed]="this.assignedTaskForm.get('employer')?.invalid">
+        @for (employer of employers; track $index)
+        {
+        <option [ngValue]="employer">
+          {{employer.name}} {{employer.surname}}
+        </option>
+        }
+      </select>
+    </li>
+    <button class="btn btn-primary" [disabled]="this.assignedTaskForm.invalid">
+      Confirm
+    </button>
+  </ul>
+</form>
+</div>
+</div>

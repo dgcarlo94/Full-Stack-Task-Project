@@ -1,0 +1,81 @@
+<div class="card mb-3">
+  <div class="card-header">
+    <h5 class="card-title" style="text-align: center;">
+      {{ employer?.name }} {{ employer?.surname }}
+    </h5>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-2 email">
+        Email:
+      </div>
+
+      <div class="col-8 email email-border">
+        <span class="email-label">
+          {{ employer?.email }}
+        </span>
+        <br>
+      </div>
+    </div>
+
+    <hr />
+
+    <!---->
+    <div class="container">
+      <div class="row">
+        <div class="col-4 d-flex">
+          <button class="btn btn-primary btn-assigned-task" (click)="showTasks()" appShadowBox>
+            Assigned Tasks
+          </button>
+        </div>
+        <div class="col-4 d-flex">
+          <button class="btn btn-danger btn-remove" (click)="removeEmployer(employer?.id_employer)" appShadowBox>
+            Remove
+          </button>
+        </div>
+        <div class="col-4 d-flex">
+          <button class="btn btn-primary btn-edit"
+            routerLink="/task-app/employers/employers-form/{{employer?.id_employer}}" appShadowBox>
+            Edit
+          </button>
+        </div>
+      </div>
+    </div>
+    <ul class="list-group list-group-tasks">
+      @for (assignedTask of assignedTasks; track $index)
+      {
+      @if (assignedTask.employer?.id_employer == employer?.id_employer && this.toggleAssignedTask == true){
+      <li class="list-group-item assigned-task-li">
+        <b>
+          Title:
+        </b>
+        <br>
+        {{assignedTask.task?.title}}
+        <br>
+        <b>Start Date:</b> {{assignedTask.task?.start_date}}
+        <br>
+        <b>End Date:</b> {{assignedTask.task?.end_date}}
+        <br>
+        <b>State:</b> {{assignedTask.task?.state?.state}}
+        <br>
+        @if (assignedTask.task?.state?.state === "IN_PROGRESS"){
+        <div class="row remove-complete-btn-row">
+          <div class="col-6">
+            <button class="task-btn" (click)="removeAssignedTask(assignedTask.id_assigned_task, assignedTask.task)"
+              appShadowBox>
+              Remove Task
+            </button>
+          </div>
+          <div class="col-6">
+            <button class="task-btn" (click)="setTaskCompleted(assignedTask.task)" appShadowBox>
+              Completed
+            </button>
+          </div>
+        </div>
+        }
+      </li>
+      }
+      }
+    </ul>
+  </div>
+</div>

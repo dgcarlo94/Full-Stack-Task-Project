@@ -1,0 +1,11 @@
+.card input,
+.card textarea,
+.card select {
+  width: 100%; /* Imposta la larghezza al 100% */
+  box-sizing: border-box; /* Includi padding e bordi nella larghezza totale */
+}
+
+.textarea
+{
+    height: 10rem;
+}

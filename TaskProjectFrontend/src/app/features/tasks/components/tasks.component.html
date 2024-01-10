@@ -1,0 +1,70 @@
+<div class="container">
+<h3 style="text-align:center; margin-top: 2rem; margin-bottom: 2rem;">Tasks list</h3>
+  <div class="row">
+    @for (task of tasks; track $index)
+    {
+    <div class="col-md-4">
+      <app-task-card [task]="task" (notify)="getTasks()"></app-task-card>
+    </div>
+    }
+    <div 
+      class="col-md-4 add-task"
+      (click)="getTaskForm()">
+      <div class="card mb-3">
+        <div class="card-header">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;"></h5>
+          <div class="row">
+            <div class="col-12 card-text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 description-div">
+              <h4 style="text-align: center;" class="description">
+                Add Task
+              </h4>
+            </div>
+          </div>
+          <div class="row card-start-date">
+            <div class="col-8">
+              <b>
+                Start Date:
+              </b> 
+            </div>
+            <div class="col-4">
+            </div>
+          </div>
+          <div class="row card-end-date">
+            <div class="col-8">
+              <b>
+                End Date: 
+              </b>
+            </div>
+            <div class="col-4 text-end-date">
+            </div>
+          </div>
+          <div class="row card-state">
+            <div class="col-8">
+              <b
+                id="state">
+                  State: 
+              </b>
+            </div>
+            <div class="col-4">
+            </div>
+          </div>
+          <!---->
+          <div class="row">
+            <div class="col-6">
+            </div>
+            <div class="col-6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

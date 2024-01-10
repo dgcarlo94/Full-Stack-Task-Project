@@ -1,0 +1,15 @@
+import { Component, Injectable } from '@angular/core';
+
+@Component({
+  selector: 'app-page.not.found',
+  standalone: true,
+  imports: [],
+  templateUrl: './page.not.found.component.html',
+  styleUrl: './page.not.found.component.scss'
+})
+@Injectable({
+  providedIn: 'root'
+})
+export class PageNotFoundComponent {
+
+}

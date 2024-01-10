@@ -1,0 +1,24 @@
+<h1 style="text-align: center; margin-top: 2rem;">Add Employer</h1>
+
+<div class="d-flex justify-content-center" style="margin-top: 5rem;">
+  <form [formGroup]="this.employerForm" (ngSubmit)="addEmployer()">
+<div class="card" style="width: 18rem;">
+  
+    <div class="card-body">
+      
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><h5 class="card-title justify-content-center" style="text-align: center;">Add Employer</h5></li>
+      <li class="list-group-item"><label>Name: </label></li>
+      <li class="list-group-item"><input formControlName="name" [appSetBorderRed]="this.employerForm.get('name')?.invalid" type="text"></li>
+      <li class="list-group-item"><label>{{employerForm.get('name')?.value?.length}} / 50 </label></li>
+      <li class="list-group-item"><label>Surname:</label></li>
+      <li class="list-group-item"><input formControlName="surname" [appSetBorderRed]="this.employerForm.get('surname')?.invalid" type="text"></li>
+      <li class="list-group-item"><label>{{employerForm.get('surname')?.value?.length}} / 50 </label></li>
+        <li class="list-group-item"><label>Email:</label></li>
+      <li class="list-group-item"><input formControlName="email" [appSetBorderRed]="this.employerForm.get('email')?.invalid" type="email"></li>
+    </ul>
+</div>
+    <button class="btn btn-primary" [disabled]="this.employerForm.invalid">Confirm</button>
+  </div>
+</form>
+</div>
