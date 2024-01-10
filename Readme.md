@@ -7,7 +7,7 @@ Each newly created task is initially in a "CREATED" state and can be allocated t
 While the task is IN_PROGRESS, it can be removed from the employer's task list and his state returns back to "CREATED".
 Once the button "complete" is clicked the task's state become "COMPLETED". A Completed task couldn't be reassigned to other employers, thus permanently remaining in the task list of the employee who completed it.
 
-This project was developed as part of the "Full-Stack Developer in Cloud" training course, organised by Bit S.P.A., funded by FormaTemp and delivered by ForPiù.
+This project was developed as part of the "Full-Stack Developer in Cloud" training course, supported by Bit SPA, which provided educational materials and staff, funded by FormaTemp and organized by ForPiù and promoted by Lavoropiù SPA.
 
 ## Technologies Used
 
